@@ -1,11 +1,11 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  /* color-scheme: light dark; */
+  color: #000;
+  background-color: rgba(255, 255, 255, 0.87);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -13,19 +13,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
 body {
-  margin: 0;
+  margin: 20px 0;
   display: flex;
-  place-items: center;
+  justify-content: center;
   min-width: 320px;
   min-height: 100vh;
 }
@@ -35,13 +26,6 @@ h1 {
   line-height: 1.1;
 }
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
 .wordsearch-wrapper {
   display: grid;
   grid-template-columns: auto 200px;
@@ -49,8 +33,8 @@ h1 {
 }
 
 .grid {
-  border: 1px solid lime;
-  color: #fff;
+  border: 4px double #000;
+  color: #000;
   padding: 2em;
   width: 600px;  
 }
@@ -64,8 +48,8 @@ h1 {
   text-align: center;
   width: 50px;
   height: 50px;
-  font-size: 2rem;
-  font-weight: 800;
+  font-size: 1.8rem;
+  font-weight: 600;
 }
 
 .words {
@@ -73,23 +57,37 @@ h1 {
   flex-direction: column;
   align-items: flex-start;
   padding: 10px;
-  border: 1px solid magenta;
+  border: 4px double #000;
+  font-size: 1.2rem;
 }
 
 .words > div {
   margin: 5px;
 }
 
+.controls {
+  margin: 10px 0;
+}
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.controls > button {
+  padding: 5px 10px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  color: #fff;
+  background-color: goldenrod; 
+}
+
+.controls > button:hover {
+  transform: scale(1.1);
+  font-weight: bold;  
+}
+
+
+/*Don't print these*/
+@media print
+{    
+    #tool-bar
+    {
+        display: none;
+    }
 }
