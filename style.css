@@ -1,5 +1,6 @@
 :root {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif,
+    system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -13,16 +14,21 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-body {
-  margin: 20px 0;
-  display: flex;
-  justify-content: center;
+body { 
+  min-height: 100vh;  
+}
+
+main {
+  margin: 15px auto;
   min-width: 320px;
-  min-height: 100vh;
+  width: fit-content;
+  display: flex;
+  justify-content: center;  
+  flex-direction: column;
 }
 
 h1 {
-  font-size: 3.2em;
+  font-size: 2.5em;
   line-height: 1.1;
 }
 
@@ -36,7 +42,7 @@ h1 {
   border: 4px double #000;
   color: #000;
   padding: 2em;
-  width: 600px;  
+  width: 600px;
 }
 
 .grid > div {
@@ -46,8 +52,8 @@ h1 {
 
 .letter {
   text-align: center;
-  width: 50px;
-  height: 50px;
+  width: 35px;
+  height: 45px;
   font-size: 1.8rem;
   font-weight: 600;
 }
@@ -74,20 +80,67 @@ h1 {
   font-size: 1.2rem;
   border-radius: 5px;
   color: #fff;
-  background-color: goldenrod; 
+  background-color: goldenrod;
 }
 
 .controls > button:hover {
   transform: scale(1.1);
-  font-weight: bold;  
+  font-weight: bold;
 }
 
+#setup-dialog {
+  width: 100%;
+  min-width: 350px;
+  max-width: 500px;
+}
+
+#setup-dialog form {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#setup-dialog form button {
+  width: 60%;
+  margin: 10px auto;
+  padding: 5px 10px;
+  background-color: green;
+  color: #fff;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+#setup-dialog form input {
+  height: 50px;
+  font-size: 1.2rem;
+}
+
+#setup-dialog #close-dialog {
+  float: right;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: red;
+}
+
+#watermark {
+  display: none;
+}
 
 /*Don't print these*/
-@media print
-{    
-    #tool-bar
-    {
-        display: none;
-    }
+@media print {
+  @page {size: landscape}
+  body {
+    width: 90%;
+    max-width: 1048px;
+    min-height: 100%;
+  }
+
+  #tool-bar {
+    display: none;
+  }
+  
+  #watermark {
+    display: block;
+  }
 }

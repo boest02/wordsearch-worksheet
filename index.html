@@ -7,22 +7,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Wordsearch Worksheet</title>
   
-  <style type="text/css" media="print">
-    @page { size: landscape; }
-  </style>
 </head>
 
 <body>
-  <div>
-    <h1>WordSearch Worksheet</h1>
+  <main>
+    <h1 id="sheet-title">WordSearch Worksheet</h1>
     <div class="wordsearch-wrapper">
       <div class="grid"> </div>
       <div class="words"> </div>
     </div>
     <div id="tool-bar" class="controls">
+      <button id="setup">Setup Wordsearch!</button>
       <button id="printer">Print Me!</button>
-    </div>    
+    </div>
+  </main>
+  <div id="watermark">
+    <h2>This ONLY shows when printing!</h2>
   </div>
+  <dialog id="setup-dialog">
+    <button id="close-dialog" title="Close Dialog">&#9876;</button>
+    <h3>Lets setup a Wordsearch...</h3>
+    <form>
+      <label for="name">Worksheet Name:</label> 
+      <input type="text" id="name" name="name" required minlength="4" maxlength="30" size="10" />
+      <label for="words">List of Words (comma separated):</label> 
+      <textarea id="words" required rows="10" cols="25"></textarea>      
+      <button>Done</button>
+    </form>
+  </dialog>
   <script type="module" src="/main.js"></script>
 </body>
 
