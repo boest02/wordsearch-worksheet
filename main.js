@@ -26,7 +26,7 @@ const updatePage = (data) => {
   const options = {
     cols: 10,
     rows: 11,
-    disabledDirections: ["N", "W", "NW", "SW", "SE", "NE"],
+    disabledDirections: [], // use if we want to make a cross word? ["N", "W", "NW", "SW", "SE", "NE"],
     dictionary: data.words,
     maxWords: 20,
     backwardsProbability: 0.3,
