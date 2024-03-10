@@ -12,21 +12,21 @@ const sheetTitle = document.querySelector("#sheet-title");
 const closeDialogBtn = document.querySelector("#close-dialog");
 const rebuildBtn = document.querySelector("#rebuild");
 
-let data = {};
+let data = null;
 let grid = null;
 let words = null;
 let puzzle = null;
 
 console.log(closeDialogBtn);
 
-const updatePage = (
-  data = { name: "Word Search", words: ["sample", "word", "search"] }
-) => {
+const updatePage = (data) => {
+  
+  data = data || { name: "Word Search", words: ["sample", "word", "search"] };
   // If an option is missing, it will be given a default value
   const options = {
     cols: 10,
     rows: 11,
-    disabledDirections: [],
+    disabledDirections: ["N", "W", "NW", "SW", "SE", "NE"],
     dictionary: data.words,
     maxWords: 20,
     backwardsProbability: 0.3,
