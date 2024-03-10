@@ -10,30 +10,42 @@ const dialogForm = document.querySelector("#setup-dialog form");
 const printerBtn = document.querySelector("#printer");
 const sheetTitle = document.querySelector("#sheet-title");
 const closeDialogBtn = document.querySelector("#close-dialog");
+const rebuildBtn = document.querySelector("#rebuild");
+
+let data = null;
+let grid = null;
+let words = null;
+let puzzle = null;
+
 console.log(closeDialogBtn);
 
-const updatePage = (data={name: "Word Search", words: ["sample", "word", "search"]}) => {
+const updatePage = (data) => {
+  
+  data = data || { name: "Word Search", words: ["sample", "word", "search"] };
   // If an option is missing, it will be given a default value
   const options = {
     cols: 10,
-    rows: 10,
-    disabledDirections: [],
+    rows: 11,
+    disabledDirections: [], // use if we want to make a cross word? ["N", "W", "NW", "SW", "SE", "NE"],
     dictionary: data.words,
     maxWords: 20,
     backwardsProbability: 0.3,
     upperCase: true,
     diacritics: true,
   };
+  
+  console.log("UpdatePage: ", {data, options});
+  
+  puzzle = null; // reset
+  grid = null;
 
   // Create a new puzzle
-  const ws = new WordSearch(options);
+  puzzle = new WordSearch(options);
+  console.log("Puzzle: ", puzzle);
 
-  // Use its methods
-  console.dir(ws);
+  grid = new GridLayout(puzzle.grid);
+  words = words ? words.update(puzzle.words) :  new Words(puzzle.words);
 
-  let grid = new GridLayout(ws.grid);
-  let words = new Words(ws.words);
-  
   sheetTitle.textContent = data.name;
   document.querySelector(".grid").innerHTML = grid.output();
   document.querySelector(".words").innerHTML = words.output();
@@ -42,15 +54,16 @@ const updatePage = (data={name: "Word Search", words: ["sample", "word", "search
 printerBtn.addEventListener("click", () => window.print());
 setupBtn.addEventListener("click", () => dialog.showModal());
 closeDialogBtn.addEventListener("click", () => dialog.close());
+rebuildBtn.addEventListener("click", () => updatePage(data));
 
 dialogForm.addEventListener("submit", (e) => {
   e.preventDefault();
-  console.dir(e.target);
-  let data = validateForm({
+  
+  data = validateForm({
     name: e.target.name.value,
     words: e.target.words.value,
   });
-  console.log(data);
+  
   dialog.close();
   updatePage(data);
 });

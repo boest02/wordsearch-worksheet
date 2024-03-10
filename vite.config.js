@@ -7,4 +7,12 @@ export default defineConfig({
       // necessary for segment analytics lib to work
       global: {},
     },
+    server: {
+      host: "0.0.0.0",
+      port: 3000,
+      strictPort: true,
+      hmr: {
+          port: 443,
+      },
+  },
   })

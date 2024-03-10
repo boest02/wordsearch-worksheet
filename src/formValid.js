@@ -10,6 +10,8 @@ function validateWords(value) {
       return /^[a-zA-Z]+$/.test(word); 
     });
     
+    console.log("Valid?:", isValid);
+    
     return isValid ? words : [];
   }
 
