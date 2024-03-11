@@ -1,0 +1,543 @@
+{
+    "lists": {
+        "Math": [
+            "Numbers",
+            "Shapes",
+            "Addition",
+            "Subtraction",
+            "Patterns"
+        ],
+        "Science": [
+            "Animals",
+            "Plants",
+            "Space",
+            "Weather",
+            "Experiments"
+        ],
+        "Reading": [
+            "Books",
+            "Stories",
+            "Letters",
+            "Words",
+            "Rhymes"
+        ],
+        "Art": [
+            "Drawing",
+            "Painting",
+            "Crafts",
+            "Colors",
+            "Imagination"
+        ],
+        "Music": [
+            "Songs",
+            "Instruments",
+            "Rhythm",
+            "Melody",
+            "Beats"
+        ],
+        "Sports": [
+            "Soccer",
+            "Basketball",
+            "Running",
+            "Swimming",
+            "Jumping"
+        ],
+        "Writing": [
+            "Letters",
+            "Words",
+            "Sentences",
+            "Stories",
+            "Journal"
+        ],
+        "Social Studies": [
+            "Maps",
+            "Community",
+            "History",
+            "Culture",
+            "Flags"
+        ],
+        "Computers": [
+            "Coding",
+            "Games",
+            "Internet",
+            "Typing",
+            "Mouse"
+        ],
+        "Health": [
+            "Exercise",
+            "Nutrition",
+            "Hygiene",
+            "Safety",
+            "Sleep"
+        ],
+        "Nature": [
+            "Animals",
+            "Plants",
+            "Rocks",
+            "Water",
+            "Weather"
+        ],
+        "Drama": [
+            "Acting",
+            "Costumes",
+            "Theater",
+            "Improv",
+            "Scripts"
+        ],
+        "Puzzles": [
+            "Jigsaw",
+            "Crossword",
+            "Sudoku",
+            "Mazes",
+            "Logic"
+        ],
+        "Cooking": [
+            "Recipes",
+            "Healthy",
+            "Meals",
+            "Snacks",
+            "Baking"
+        ],
+        "Languages": [
+            "English",
+            "Spanish",
+            "French",
+            "German",
+            "Chinese"
+        ],
+        "Crafts": [
+            "Paper",
+            "Clay",
+            "Beads",
+            "Textiles",
+            "Recycled"
+        ],
+        "Geography": [
+            "Continents",
+            "Oceans",
+            "Countries",
+            "Cities",
+            "Landforms"
+        ],
+        "Physical Education": [
+            "Fitness",
+            "Sportsmanship",
+            "Teamwork",
+            "Coordination",
+            "Flexibility"
+        ],
+        "Coding": [
+            "HTML",
+            "CSS",
+            "Python",
+            "Scratch",
+            "Javascript"
+        ],
+        "Robotics": [
+            "Sensors",
+            "Actuators",
+            "Programming",
+            "Control",
+            "Navigation"
+        ],
+        "Gardening": [
+            "Seeds",
+            "Plants",
+            "Soil",
+            "Gardens",
+            "Harvest"
+        ],
+        "Singing": [
+            "Songs",
+            "Pitch",
+            "Tone",
+            "Harmony",
+            "Choir"
+        ],
+        "Dance": [
+            "Ballet",
+            "Hip Hop",
+            "Jazz",
+            "Tap",
+            "Choreography"
+        ],
+        "Physics": [
+            "Gravity",
+            "Motion",
+            "Energy",
+            "Forces",
+            "Friction"
+        ],
+        "Chemistry": [
+            "Elements",
+            "Reactions",
+            "Compounds",
+            "Mixtures",
+            "Acids"
+        ],
+        "Biology": [
+            "Cells",
+            "Organs",
+            "Ecosystems",
+            "Evolution",
+            "Genetics"
+        ],
+        "Astronomy": [
+            "Planets",
+            "Stars",
+            "Galaxies",
+            "Telescopes",
+            "Constellations"
+        ],
+        "History": [
+            "Ancient",
+            "Medieval",
+            "Modern",
+            "Civilizations",
+            "Wars"
+        ],
+        "Art History": [
+            "Renaissance",
+            "Impressionism",
+            "Abstract",
+            "Surrealism",
+            "Pop Art"
+        ],
+        "Literature": [
+            "Novels",
+            "Poetry",
+            "Drama",
+            "Fiction",
+            "Nonfiction"
+        ],
+        "Mathematics": [
+            "Algebra",
+            "Geometry",
+            "Calculus",
+            "Statistics",
+            "Probability"
+        ],
+        "Ecology": [
+            "Environment",
+            "Habitats",
+            "Conservation",
+            "Biodiversity",
+            "Pollution"
+        ],
+        "Physiology": [
+            "Body",
+            "Organs",
+            "Systems",
+            "Anatomy",
+            "Health"
+        ],
+        "Psychology": [
+            "Mind",
+            "Behavior",
+            "Emotions",
+            "Development",
+            "Cognition"
+        ],
+        "Anthropology": [
+            "Culture",
+            "Society",
+            "Archaeology",
+            "Ethnography",
+            "Linguistics"
+        ],
+        "Sociology": [
+            "Social",
+            "Inequality",
+            "Family",
+            "Community",
+            "Culture"
+        ],
+        "Economics": [
+            "Money",
+            "Markets",
+            "Supply",
+            "Demand",
+            "Entrepreneurship"
+        ],
+        "Political Science": [
+            "Government",
+            "Politics",
+            "Policy",
+            "Democracy",
+            "Rights"
+        ],
+        "Environmental Science": [
+            "Climate",
+            "Ecosystems",
+            "Sustainability",
+            "Renewable",
+            "Energy"
+        ],
+        "Meteorology": [
+            "Weather",
+            "Atmosphere",
+            "Climate",
+            "Forecasting",
+            "Meteorology"
+        ],
+        "Oceanography": [
+            "Oceans",
+            "Marine",
+            "Life",
+            "Currents",
+            "Oceanography"
+        ],
+        "Linguistics": [
+            "Language",
+            "Syntax",
+            "Phonology",
+            "Semantics",
+            "Pragmatics"
+        ],
+        "Archaeology": [
+            "Artifacts",
+            "Excavation",
+            "Prehistory",
+            "Culture",
+            "Archaeology"
+        ],
+        "Literary Criticism": [
+            "Analysis",
+            "Interpretation",
+            "Critique",
+            "Literature",
+            "Theory"
+        ],
+        "Geometry": [
+            "Shapes",
+            "Angles",
+            "Lines",
+            "Polygons",
+            "Congruence"
+        ],
+        "Algebra": [
+            "Equations",
+            "Variables",
+            "Expressions",
+            "Inequalities",
+            "Functions"
+        ],
+        "Calculus": [
+            "Limits",
+            "Derivatives",
+            "Integrals",
+            "Functions",
+            "Calculus"
+        ],
+        "Statistics": [
+            "Data",
+            "Probability",
+            "Distributions",
+            "Hypothesis",
+            "Testing"
+        ],
+        "Probability": [
+            "Events",
+            "Outcomes",
+            "Probability",
+            "Random",
+            "Variables"
+        ],
+        "European History": [
+            "Renaissance",
+            "Reformation",
+            "Enlightenment",
+            "Napoleon",
+            "World War"
+        ],
+        "American History": [
+            "Revolution",
+            "Civil War",
+            "Industrial",
+            "Depression",
+            "Civil Rights"
+        ],
+        "World History": [
+            "Ancient",
+            "Medieval",
+            "Renaissance",
+            "Colonialism",
+            "Imperialism"
+        ],
+        "Asian History": [
+            "Dynasties",
+            "Confucianism",
+            "Buddhism",
+            "Imperialism",
+            "Nationalism"
+        ],
+        "Latin American History": [
+            "Conquest",
+            "Colonialism",
+            "Independence",
+            "Revolution",
+            "Dictatorship"
+        ],
+        "African History": [
+            "Civilizations",
+            "Colonialism",
+            "Independence",
+            "Apartheid",
+            "Dictatorship"
+        ],
+        "Middle Eastern History": [
+            "Civilizations",
+            "Islam",
+            "Crusades",
+            "Colonialism",
+            "Conflict"
+        ],
+        "Religious Studies": [
+            "Christianity",
+            "Islam",
+            "Judaism",
+            "Buddhism",
+            "Hinduism"
+        ],
+        "Comparative Religion": [
+            "Beliefs",
+            "Rituals",
+            "Scriptures",
+            "Spirituality",
+            "Ethics"
+        ],
+        "Philosophy": [
+            "Ethics",
+            "Logic",
+            "Metaphysics",
+            "Epistemology",
+            "Aesthetics"
+        ],
+        "Artificial Intelligence": [
+            "Machine",
+            "Learning",
+            "Neural",
+            "Networks",
+            "Robotics"
+        ],
+        "Machine Learning": [
+            "Data",
+            "Models",
+            "Algorithms",
+            "Training",
+            "Classification"
+        ],
+        "Neural Networks": [
+            "Nodes",
+            "Layers",
+            "Weights",
+            "Activation",
+            "Functions"
+        ],
+        "Cybersecurity": [
+            "Encryption",
+            "Authentication",
+            "Firewalls",
+            "Malware",
+            "Privacy"
+        ],
+        "Information Technology": [
+            "Networking",
+            "Operating",
+            "Systems",
+            "Databases",
+            "Software"
+        ],
+        "Web Development": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Responsive",
+            "Design"
+        ],
+        "Mobile Development": [
+            "iOS",
+            "Android",
+            "Apps",
+            "Development",
+            "UX/UI"
+        ],
+        "Game Development": [
+            "Unity",
+            "GameMaker",
+            "Unreal",
+            "Engines",
+            "Scripting"
+        ],
+        "Data Science": [
+            "Analytics",
+            "Visualization",
+            "Big Data",
+            "Machine",
+            "Learning"
+        ],
+        "Digital Marketing": [
+            "SEO",
+            "SEM",
+            "Email",
+            "Social",
+            "Media"
+        ],
+        "Finance": [
+            "Investments",
+            "Budgeting",
+            "Banking",
+            "Financial",
+            "Markets"
+        ],
+        "Business": [
+            "Entrepreneurship",
+            "Management",
+            "Leadership",
+            "Strategy",
+            "Innovation"
+        ],
+        "Management": [
+            "Planning",
+            "Organizing",
+            "Leading",
+            "Controlling",
+            "Evaluating"
+        ],
+        "Leadership": [
+            "Vision",
+            "Inspiration",
+            "Motivation",
+            "Communication",
+            "Integrity"
+        ],
+        "Strategy": [
+            "Planning",
+            "Execution",
+            "Competitive",
+            "Advantage",
+            "Analysis"
+        ],
+        "Innovation": [
+            "Creativity",
+            "Adaptability",
+            "Risk-Taking",
+            "Problem-Solving",
+            "Ideation"
+        ],
+        "Marketing": [
+            "Product",
+            "Price",
+            "Place",
+            "Promotion",
+            "Segmentation"
+        ],
+        "Human Resources": [
+            "Recruitment",
+            "Training",
+            "Development",
+            "Compensation",
+            "Benefits"
+        ]
+    }
+}
