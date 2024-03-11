@@ -3,6 +3,7 @@ import WordSearch from "@blex41/word-search"; // npm pkg
 import GridLayout from "./src/GridLayout.js"; // output letter grid
 import Words from "./src/Words.js"; // word list
 import validateForm from "./src/formValid.js";
+import findIntersectingWords from "./src/intersectingWords.js";
 
 const setupBtn = document.querySelector("#setup");
 const dialog = document.querySelector("#setup-dialog");
@@ -69,3 +70,5 @@ dialogForm.addEventListener("submit", (e) => {
 });
 
 updatePage();
+
+window.findIntersectingWords = findIntersectingWords;
