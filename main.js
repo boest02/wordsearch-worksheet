@@ -1,96 +1,108 @@
 import "./style.css";
-import WordSearch from "@blex41/word-search"; // npm pkg
-import GridLayout from "./src/GridLayout.js"; // output letter grid
-import Words from "./src/Words.js"; // word list
+import WorkSheet from "./src/WorkSheet.js"; // word search
+import WordSearch from "./src/WordSearch.js"; // word list
 import validateForm from "./src/formValid.js";
+import getLists from "./src/getLists.js";
+import tools from "./src/tools.js";
 
-
-const setupBtn = document.querySelector("#setup");
-const dialog = document.querySelector("#setup-dialog");
-const dialogForm = document.querySelector("#setup-dialog form");
-const textArea = dialogForm.querySelector("#words");
+const form = document.querySelector("form");
+const textArea = form.querySelector("#words");
 const printerBtn = document.querySelector("#printer");
-const sheetTitle = document.querySelector("#sheet-title");
-const closeDialogBtn = document.querySelector("#close-dialog");
-const rebuildBtn = document.querySelector("#rebuild");
+const editBtn = document.querySelector('#edit');
+const rebuildBtn = document.querySelector('#rebuild');
 
-let lists = [];
+const backgroundSearch = document.querySelector("#get-background");
+const backgroundInput = document.querySelector("#background");
+const backgroundImage = document.querySelector('#background-image');
+const setupSection = document.querySelector('.setup-section');
+const toolBar = document.querySelector('#tool-bar');
 
-// load json object
-// Using Fetch API
-async function loadJSON() {
-  const response = await fetch('src/data/Lists.json');
-  const data = await response.json();
+let backgroundImageUrl = null;
+// image search
+backgroundSearch.addEventListener("click", async (e) => {
+  e.preventDefault();
+  const regex = /\bhttps?:\/\/\S+?\.(?:png|jpe?g|gif|bmp|svg)\b/g;
+  let text = backgroundInput.value;
+  if (text.match(regex)) {
+    background.src = text;
+  } else {
+    const command = document.querySelector('input[name="searchtype"]:checked');
+    console.log(command.value);
 
-  console.log(data);
-  lists = data.lists;
-  
-  let listSelect = document.querySelector('#list-select');
-  
-  listSelect.innerHTML = `<option value="">--Please choose an option--</option>${
-    Object.keys(lists).map((key) => `<option value="${key}">${key}</option>`)
-  }`;
-  
-  listSelect.addEventListener("change", (e) => textArea.innerHTML = lists[e.target.value].join(', ' ));
-    
-}
+    switch (command.value) {
+      case "image":
+        backgroundImageUrl = await tools.getBackground(text, 'image');
+        break;
+      case "ill":
+        backgroundImageUrl = await tools.getBackground(text, 'illustration');
+        break;
+      default:
+        backgroundImageUrl = await tools.getBackground(text, 'illustration');
+        break;
+    }
 
-loadJSON();
+    backgroundImageUrl && (backgroundImage.src = backgroundImageUrl);
+  }
+});
+
+let listSelect = document.querySelector('#list-select');
+let lists = await getLists();
+
+listSelect.addEventListener("change", (evt) => (textArea.innerHTML = lists[evt.target.value].join(', ')));
 
 let data = null;
-let grid = null;
-let words = null;
 let puzzle = null;
 
-console.log(closeDialogBtn);
+const createWorksheet = (data) => {
 
-const updatePage = (data) => {
-  
-  data = data || { name: "Word Search", words: ["sample", "word", "search"] };
-  // If an option is missing, it will be given a default value
-  const options = {
-    cols: 10,
-    rows: 11,
-    disabledDirections: [], // use if we want to make a cross word? ["N", "W", "NW", "SW", "SE", "NE"],
+  if (data === null) return;
+
+  const config = {
     dictionary: data.words,
     maxWords: 20,
-    backwardsProbability: 0.3,
-    upperCase: true,
-    diacritics: true,
   };
-  
-  console.log("UpdatePage: ", {data, options});
-  
-  puzzle = null; // reset
-  grid = null;
+
+  const mainEl = document.querySelector("main");
 
   // Create a new puzzle
-  puzzle = new WordSearch(options);
+  let wordSearch = new WordSearch(config);
+  puzzle = wordSearch.puzzle;
   console.log("Puzzle: ", puzzle);
 
-  grid = new GridLayout(puzzle.grid);
-  words = words ? words.update(puzzle.words) :  new Words(puzzle.words);
-
-  sheetTitle.textContent = data.name;
-  document.querySelector(".grid").innerHTML = grid.output();
-  document.querySelector(".words").innerHTML = words.output();
+  let worksheet = new WorkSheet(data.name, puzzle, data.background);
+  mainEl.innerHTML = worksheet.toHTML();
+  worksheet = null; //destroy
 };
 
-printerBtn.addEventListener("click", () => window.print());
-setupBtn.addEventListener("click", () => dialog.showModal());
-closeDialogBtn.addEventListener("click", () => dialog.close());
-rebuildBtn.addEventListener("click", () => updatePage(data));
+const toggleScreens = (edit) => {
+  if (edit) {
+    setupSection.style.display = "inherit";
+    toolBar.style.display = "none";
+  } else {
+    setupSection.style.display = "none";
+    toolBar.style.display = "flex";
+  }
 
-dialogForm.addEventListener("submit", (e) => {
+};
+
+backgroundImage.addEventListener("load", (e) => backgroundImage.style.display = "block");
+printerBtn.addEventListener("click", () => window.print());
+editBtn.addEventListener("click", () => toggleScreens(true));
+rebuildBtn.addEventListener("click", () => createWorksheet(data));
+
+
+form.addEventListener("submit", (e) => {
   e.preventDefault();
-  
+
   data = validateForm({
     name: e.target.name.value,
     words: e.target.words.value,
+    background: backgroundImageUrl,
   });
-  
-  dialog.close();
-  updatePage(data);
-});
 
-updatePage();
+  console.dir(data);
+
+  toggleScreens(false);
+
+  createWorksheet(data);
+});

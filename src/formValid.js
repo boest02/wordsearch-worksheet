@@ -15,7 +15,7 @@ function validateWords(value) {
     return isValid ? words : [];
   }
 
-const validateForm = ({name, words}) => {    
-    return { name, words: validateWords(words) };    
+const validateForm = ({name, words, background}) => {    
+    return { name, words: validateWords(words), background};    
 };
 export default validateForm;
