@@ -1,543 +1,1180 @@
 {
     "lists": {
-        "Math": [
-            "Numbers",
-            "Shapes",
-            "Addition",
-            "Subtraction",
-            "Patterns"
+        "Animals": [
+            "Dogs",
+            "Cats",
+            "Elephants",
+            "Lions",
+            "Tigers",
+            "Bears",
+            "Dolphins",
+            "Penguins",
+            "Giraffes",
+            "Monkeys"
         ],
-        "Science": [
-            "Animals",
-            "Plants",
-            "Space",
-            "Weather",
-            "Experiments"
+        "Fruits": [
+            "Apples",
+            "Bananas",
+            "Oranges",
+            "Grapes",
+            "Strawberries",
+            "Watermelons",
+            "Pineapples",
+            "Mangos",
+            "Peaches",
+            "Kiwi"
         ],
-        "Reading": [
-            "Books",
-            "Stories",
-            "Letters",
-            "Words",
-            "Rhymes"
-        ],
-        "Art": [
-            "Drawing",
-            "Painting",
-            "Crafts",
-            "Colors",
-            "Imagination"
-        ],
-        "Music": [
-            "Songs",
-            "Instruments",
-            "Rhythm",
-            "Melody",
-            "Beats"
+        "Colors": [
+            "Red",
+            "Blue",
+            "Green",
+            "Yellow",
+            "Orange",
+            "Purple",
+            "Pink",
+            "Brown",
+            "Black",
+            "White"
         ],
         "Sports": [
             "Soccer",
             "Basketball",
-            "Running",
+            "Baseball",
             "Swimming",
-            "Jumping"
+            "Tennis",
+            "Gymnastics",
+            "Skating",
+            "Cycling",
+            "Running",
+            "Karate"
         ],
-        "Writing": [
-            "Letters",
-            "Words",
-            "Sentences",
-            "Stories",
-            "Journal"
+        "Superheroes": [
+            "Superman",
+            "Batman",
+            "Spiderman",
+            "Wonder Woman",
+            "Captain America",
+            "Iron Man",
+            "Hulk",
+            "Thor",
+            "Black Widow",
+            "Flash"
         ],
-        "Social Studies": [
-            "Maps",
-            "Community",
-            "History",
-            "Culture",
-            "Flags"
+        "Space": [
+            "Planets",
+            "Stars",
+            "Astronauts",
+            "Galaxies",
+            "Rocket",
+            "Comets",
+            "Aliens",
+            "Satellites",
+            "Black Hole",
+            "Moon"
         ],
-        "Computers": [
-            "Coding",
-            "Games",
-            "Internet",
-            "Typing",
-            "Mouse"
-        ],
-        "Health": [
-            "Exercise",
-            "Nutrition",
-            "Hygiene",
-            "Safety",
-            "Sleep"
-        ],
-        "Nature": [
-            "Animals",
-            "Plants",
-            "Rocks",
-            "Water",
-            "Weather"
-        ],
-        "Drama": [
-            "Acting",
-            "Costumes",
-            "Theater",
-            "Improv",
-            "Scripts"
-        ],
-        "Puzzles": [
+        "Games": [
+            "Chess",
+            "Checkers",
             "Jigsaw",
-            "Crossword",
-            "Sudoku",
-            "Mazes",
-            "Logic"
+            "Monopoly",
+            "Scrabble",
+            "Twister",
+            "Uno",
+            "Hopscotch",
+            "Connect Four",
+            "Pictionary"
         ],
-        "Cooking": [
-            "Recipes",
-            "Healthy",
-            "Meals",
-            "Snacks",
-            "Baking"
+        "Books": [
+            "Adventure",
+            "Fantasy",
+            "Mystery",
+            "Science Fiction",
+            "Comics",
+            "Fairy Tales",
+            "Biography",
+            "History",
+            "Poetry",
+            "Humor"
         ],
-        "Languages": [
-            "English",
-            "Spanish",
-            "French",
-            "German",
-            "Chinese"
+        "Movies": [
+            "Animated",
+            "Action",
+            "Comedy",
+            "Drama",
+            "Adventure",
+            "Fantasy",
+            "Science Fiction",
+            "Musical",
+            "Superhero",
+            "Family"
         ],
-        "Crafts": [
-            "Paper",
-            "Clay",
-            "Beads",
-            "Textiles",
-            "Recycled"
+        "Music": [
+            "Guitar",
+            "Piano",
+            "Drums",
+            "Violin",
+            "Flute",
+            "Saxophone",
+            "Trumpet",
+            "Harmonica",
+            "Keyboard",
+            "Microphone"
         ],
-        "Geography": [
-            "Continents",
-            "Oceans",
-            "Countries",
-            "Cities",
-            "Landforms"
+        "Plants": [
+            "Trees",
+            "Flowers",
+            "Grass",
+            "Shrubs",
+            "Ferns",
+            "Moss",
+            "Cacti",
+            "Bamboo",
+            "Vines",
+            "Seeds"
         ],
-        "Physical Education": [
-            "Fitness",
-            "Sportsmanship",
-            "Teamwork",
-            "Coordination",
-            "Flexibility"
+        "Vehicles": [
+            "Cars",
+            "Trucks",
+            "Trains",
+            "Planes",
+            "Boats",
+            "Bicycles",
+            "Scooters",
+            "Motorcycles",
+            "Helicopters",
+            "Submarines"
         ],
-        "Coding": [
-            "HTML",
-            "CSS",
-            "Python",
-            "Scratch",
-            "Javascript"
+        "Food": [
+            "Pizza",
+            "Ice Cream",
+            "Burgers",
+            "Tacos",
+            "Sushi",
+            "Pasta",
+            "Sandwiches",
+            "Salads",
+            "Cake",
+            "Cookies"
         ],
-        "Robotics": [
-            "Sensors",
-            "Actuators",
-            "Programming",
-            "Control",
-            "Navigation"
+        "Weather": [
+            "Sun",
+            "Rain",
+            "Clouds",
+            "Wind",
+            "Snow",
+            "Storm",
+            "Rainbow",
+            "Lightning",
+            "Fog",
+            "Hail"
         ],
-        "Gardening": [
-            "Seeds",
-            "Plants",
-            "Soil",
-            "Gardens",
-            "Harvest"
+        "Insects": [
+            "Butterflies",
+            "Bees",
+            "Ants",
+            "Flies",
+            "Mosquitoes",
+            "Ladybugs",
+            "Caterpillars",
+            "Grasshoppers",
+            "Dragonflies",
+            "Beetles"
         ],
-        "Singing": [
-            "Songs",
-            "Pitch",
-            "Tone",
-            "Harmony",
-            "Choir"
+        "Dinosaurs": [
+            "Tyrannosaurus",
+            "Triceratops",
+            "Stegosaurus",
+            "Velociraptor",
+            "Brachiosaurus",
+            "Ankylosaurus",
+            "Pterodactyl",
+            "Spinosaurus",
+            "Allosaurus",
+            "Diplodocus"
+        ],
+        "Magic": [
+            "Wizards",
+            "Wands",
+            "Spells",
+            "Potions",
+            "Magicians",
+            "Enchantments",
+            "Dragons",
+            "Fairies",
+            "Unicorns",
+            "Mermaids"
+        ],
+        "Ocean": [
+            "Sharks",
+            "Whales",
+            "Dolphins",
+            "Octopus",
+            "Jellyfish",
+            "Sea turtles",
+            "Seahorses",
+            "Seals",
+            "Coral",
+            "Seaweed"
+        ],
+        "Robots": [
+            "Androids",
+            "Cyborgs",
+            "Mechs",
+            "Drones",
+            "Exoskeletons",
+            "Automatons",
+            "Bots",
+            "Golems",
+            "AI",
+            "Robotic pets"
+        ],
+        "Mythology": [
+            "Greek",
+            "Norse",
+            "Egyptian",
+            "Roman",
+            "Chinese",
+            "Indian",
+            "Celtic",
+            "Japanese",
+            "African",
+            "Native American"
+        ],
+        "Zoo": [
+            "Lion",
+            "Elephant",
+            "Monkey",
+            "Giraffe",
+            "Zebra",
+            "Kangaroo",
+            "Tiger",
+            "Penguin",
+            "Hippo",
+            "Rhino"
+        ],
+        "Candy": [
+            "Chocolate",
+            "Gummy bears",
+            "Lollipops",
+            "Cotton candy",
+            "Caramel",
+            "Licorice",
+            "Jelly beans",
+            "Sour candy",
+            "Hard candy",
+            "Bubblegum"
+        ],
+        "Outer Space": [
+            "Asteroids",
+            "Saturn",
+            "Mars",
+            "Neptune",
+            "Uranus",
+            "Venus",
+            "Mercury",
+            "Jupiter",
+            "Pluto",
+            "Spaceship"
+        ],
+        "Construction": [
+            "Bricks",
+            "Cement",
+            "Crane",
+            "Excavator",
+            "Bulldozer",
+            "Dump truck",
+            "Hard hat",
+            "Hammer",
+            "Screwdriver",
+            "Nails"
+        ],
+        "Instruments": [
+            "Trumpet",
+            "Guitar",
+            "Violin",
+            "Drums",
+            "Piano",
+            "Flute",
+            "Saxophone",
+            "Trombone",
+            "Cello",
+            "Accordion"
+        ],
+        "Robots": [
+            "Androids",
+            "Cyborgs",
+            "Mechs",
+            "Drones",
+            "Exoskeletons",
+            "Automatons",
+            "Bots",
+            "Golems",
+            "AI",
+            "Robotic pets"
+        ],
+        "Magic": [
+            "Wizards",
+            "Wands",
+            "Spells",
+            "Potions",
+            "Magicians",
+            "Enchantments",
+            "Dragons",
+            "Fairies",
+            "Unicorns",
+            "Mermaids"
+        ],
+        "Cars": [
+            "Sedan",
+            "SUV",
+            "Convertible",
+            "Pickup truck",
+            "Minivan",
+            "Coupe",
+            "Hatchback",
+            "Sports car",
+            "Luxury car",
+            "Electric car"
+        ],
+        "Board Games": [
+            "Chess",
+            "Checkers",
+            "Monopoly",
+            "Scrabble",
+            "Clue",
+            "Risk",
+            "Candy Land",
+            "The Game of Life",
+            "Battleship",
+            "Settlers of Catan"
+        ],
+        "Bugs": [
+            "Ladybug",
+            "Butterfly",
+            "Ant",
+            "Beetle",
+            "Bee",
+            "Caterpillar",
+            "Praying mantis",
+            "Grasshopper",
+            "Dragonfly",
+            "Mosquito"
         ],
         "Dance": [
             "Ballet",
-            "Hip Hop",
-            "Jazz",
+            "Hip hop",
             "Tap",
-            "Choreography"
+            "Jazz",
+            "Breakdance",
+            "Ballroom",
+            "Salsa",
+            "Flamenco",
+            "Contemporary",
+            "Folk"
         ],
-        "Physics": [
-            "Gravity",
-            "Motion",
-            "Energy",
-            "Forces",
-            "Friction"
+        "Rockets": [
+            "Space",
+            "NASA",
+            "Satellite",
+            "Astronaut",
+            "Moon",
+            "Mars",
+            "Rocketship",
+            "Mission",
+            "Launch",
+            "Liftoff"
         ],
-        "Chemistry": [
-            "Elements",
-            "Reactions",
-            "Compounds",
-            "Mixtures",
-            "Acids"
+        "Video Games": [
+            "Mario",
+            "Sonic",
+            "Zelda",
+            "Pokemon",
+            "Minecraft",
+            "Fortnite",
+            "Roblox",
+            "Overwatch",
+            "Call of Duty",
+            "Super Smash Bros"
         ],
-        "Biology": [
-            "Cells",
-            "Organs",
-            "Ecosystems",
-            "Evolution",
-            "Genetics"
+        "Magic Tricks": [
+            "Card tricks",
+            "Disappearing",
+            "Levitation",
+            "Sleight of hand",
+            "Escape",
+            "Mind reading",
+            "Illusion",
+            "Transposition",
+            "Prediction",
+            "Telekinesis"
         ],
-        "Astronomy": [
-            "Planets",
-            "Stars",
-            "Galaxies",
-            "Telescopes",
-            "Constellations"
+        "Fairy Tales": [
+            "Cinderella",
+            "Snow White",
+            "Little Red Riding Hood",
+            "Sleeping Beauty",
+            "Beauty and the Beast",
+            "The Little Mermaid",
+            "Jack and the Beanstalk",
+            "Hansel and Gretel",
+            "Rapunzel",
+            "Goldilocks"
         ],
-        "History": [
-            "Ancient",
-            "Medieval",
-            "Modern",
-            "Civilizations",
-            "Wars"
+        "Desserts": [
+            "Cake",
+            "Ice cream",
+            "Pie",
+            "Cookies",
+            "Brownies",
+            "Cupcakes",
+            "Pudding",
+            "Donuts",
+            "Cheesecake",
+            "Chocolates"
         ],
-        "Art History": [
-            "Renaissance",
-            "Impressionism",
-            "Abstract",
-            "Surrealism",
-            "Pop Art"
+        "Gardening": [
+            "Flowers",
+            "Vegetables",
+            "Seeds",
+            "Watering can",
+            "Gardening tools",
+            "Soil",
+            "Compost",
+            "Planting",
+            "Pruning",
+            "Weeding"
         ],
-        "Literature": [
-            "Novels",
-            "Poetry",
-            "Drama",
-            "Fiction",
-            "Nonfiction"
+        "Pets": [
+            "Dog",
+            "Cat",
+            "Fish",
+            "Bird",
+            "Hamster",
+            "Guinea pig",
+            "Rabbit",
+            "Turtle",
+            "Lizard",
+            "Snake"
         ],
-        "Mathematics": [
-            "Algebra",
-            "Geometry",
-            "Calculus",
-            "Statistics",
-            "Probability"
+        "Aquarium": [
+            "Fish",
+            "Tank",
+            "Corals",
+            "Plants",
+            "Aquatic animals",
+            "Algae",
+            "Snails",
+            "Water",
+            "Filters",
+            "Lights"
         ],
-        "Ecology": [
-            "Environment",
-            "Habitats",
-            "Conservation",
-            "Biodiversity",
-            "Pollution"
+        "Trains": [
+            "Engine",
+            "Caboose",
+            "Conductor",
+            "Tracks",
+            "Freight train",
+            "Passenger train",
+            "Steam train",
+            "Diesel train",
+            "High-speed train",
+            "Ticket"
         ],
-        "Physiology": [
-            "Body",
-            "Organs",
-            "Systems",
-            "Anatomy",
-            "Health"
+        "Sports Teams": [
+            "Soccer",
+            "Football",
+            "Baseball",
+            "Basketball",
+            "Hockey",
+            "Volleyball",
+            "Tennis",
+            "Golf",
+            "Rugby",
+            "Cricket"
         ],
-        "Psychology": [
-            "Mind",
-            "Behavior",
-            "Emotions",
-            "Development",
-            "Cognition"
+        "Outer Space": [
+            "Astronaut",
+            "Rocket",
+            "Planet",
+            "Galaxy",
+            "Comet",
+            "Asteroid",
+            "Black hole",
+            "Star",
+            "Alien",
+            "Spaceship"
         ],
-        "Anthropology": [
-            "Culture",
-            "Society",
-            "Archaeology",
-            "Ethnography",
-            "Linguistics"
+        "Dinosaurs": [
+            "Tyrannosaurus",
+            "Triceratops",
+            "Stegosaurus",
+            "Velociraptor",
+            "Brachiosaurus",
+            "Ankylosaurus",
+            "Pterodactyl",
+            "Spinosaurus",
+            "Allosaurus",
+            "Diplodocus"
         ],
-        "Sociology": [
-            "Social",
-            "Inequality",
-            "Family",
-            "Community",
-            "Culture"
+        "Bugs": [
+            "Ladybug",
+            "Butterfly",
+            "Ant",
+            "Beetle",
+            "Bee",
+            "Caterpillar",
+            "Praying mantis",
+            "Grasshopper",
+            "Dragonfly",
+            "Mosquito"
         ],
-        "Economics": [
-            "Money",
-            "Markets",
-            "Supply",
-            "Demand",
-            "Entrepreneurship"
+        "Underwater Creatures": [
+            "Fish",
+            "Shark",
+            "Dolphin",
+            "Whale",
+            "Octopus",
+            "Jellyfish",
+            "Seahorse",
+            "Sea turtle",
+            "Starfish",
+            "Crab"
         ],
-        "Political Science": [
-            "Government",
-            "Politics",
-            "Policy",
-            "Democracy",
-            "Rights"
+        "Science Experiments": [
+            "Volcano",
+            "Baking soda",
+            "Vinegar",
+            "Balloon",
+            "Magnet",
+            "Lemon",
+            "Egg",
+            "Diet coke",
+            "Mentos",
+            "Food coloring"
         ],
-        "Environmental Science": [
-            "Climate",
-            "Ecosystems",
-            "Sustainability",
-            "Renewable",
-            "Energy"
+        "Circus": [
+            "Clown",
+            "Trapeze",
+            "Ringmaster",
+            "Elephant",
+            "Lion",
+            "Acrobat",
+            "Juggler",
+            "Tightrope",
+            "Fire eater",
+            "Magician"
         ],
-        "Meteorology": [
-            "Weather",
-            "Atmosphere",
-            "Climate",
-            "Forecasting",
-            "Meteorology"
+        "Fairy Tales": [
+            "Cinderella",
+            "Snow White",
+            "Little Red Riding Hood",
+            "Sleeping Beauty",
+            "Beauty and the Beast",
+            "The Little Mermaid",
+            "Jack and the Beanstalk",
+            "Hansel and Gretel",
+            "Rapunzel",
+            "Goldilocks"
         ],
-        "Oceanography": [
-            "Oceans",
-            "Marine",
-            "Life",
-            "Currents",
-            "Oceanography"
+        "Mythical Creatures": [
+            "Dragon",
+            "Phoenix",
+            "Griffin",
+            "Mermaid",
+            "Centaur",
+            "Unicorn",
+            "Sphinx",
+            "Cyclops",
+            "Minotaur",
+            "Hydra"
         ],
-        "Linguistics": [
-            "Language",
-            "Syntax",
-            "Phonology",
-            "Semantics",
-            "Pragmatics"
+        "Adventure": [
+            "Exploration",
+            "Discovery",
+            "Journey",
+            "Quest",
+            "Expedition",
+            "Travel",
+            "Adventure park",
+            "Explore",
+            "Adventure time",
+            "Adventurer"
         ],
-        "Archaeology": [
-            "Artifacts",
-            "Excavation",
-            "Prehistory",
-            "Culture",
-            "Archaeology"
+        "Balloons": [
+            "Helium",
+            "Party",
+            "Birthday",
+            "Inflatable",
+            "Decoration",
+            "Bouquet",
+            "Colors",
+            "Air",
+            "Festival",
+            "Blimp"
         ],
-        "Literary Criticism": [
-            "Analysis",
-            "Interpretation",
-            "Critique",
-            "Literature",
-            "Theory"
+        "Toys": [
+            "Doll",
+            "Action figure",
+            "Stuffed animal",
+            "Toy car",
+            "Toy train",
+            "Play-Doh",
+            "Building blocks",
+            "Puzzle",
+            "Board game",
+            "Remote control car"
         ],
-        "Geometry": [
-            "Shapes",
-            "Angles",
-            "Lines",
-            "Polygons",
-            "Congruence"
+        "Treasure": [
+            "Gold",
+            "Silver",
+            "Jewels",
+            "Pirate",
+            "Map",
+            "X marks the spot",
+            "Treasure chest",
+            "Adventure",
+            "Lost treasure",
+            "Buried treasure"
         ],
-        "Algebra": [
-            "Equations",
-            "Variables",
-            "Expressions",
-            "Inequalities",
-            "Functions"
+        "Candy": [
+            "Chocolate",
+            "Gummy bears",
+            "Lollipops",
+            "Cotton candy",
+            "Caramel",
+            "Licorice",
+            "Jelly beans",
+            "Sour candy",
+            "Hard candy",
+            "Bubblegum"
         ],
-        "Calculus": [
-            "Limits",
-            "Derivatives",
-            "Integrals",
-            "Functions",
-            "Calculus"
+        "Carnival": [
+            "Carousel",
+            "Ferris wheel",
+            "Bumper cars",
+            "Cotton candy",
+            "Clown",
+            "Roller coaster",
+            "Games",
+            "Prizes",
+            "Popcorn",
+            "Festival"
         ],
-        "Statistics": [
-            "Data",
-            "Probability",
-            "Distributions",
-            "Hypothesis",
-            "Testing"
+        "Pirates": [
+            "Ship",
+            "Treasure",
+            "Map",
+            "Captain",
+            "Sword",
+            "Pirate flag",
+            "Parrot",
+            "Island",
+            "Cannon",
+            "Plunder"
         ],
-        "Probability": [
-            "Events",
-            "Outcomes",
-            "Probability",
-            "Random",
-            "Variables"
+        "Trains": [
+            "Engine",
+            "Caboose",
+            "Conductor",
+            "Tracks",
+            "Freight train",
+            "Passenger train",
+            "Steam train",
+            "Diesel train",
+            "High-speed train",
+            "Ticket"
         ],
-        "European History": [
-            "Renaissance",
-            "Reformation",
-            "Enlightenment",
-            "Napoleon",
-            "World War"
+        "Cooking": [
+            "Recipes",
+            "Ingredients",
+            "Chef",
+            "Cookbook",
+            "Bake",
+            "Cooking class",
+            "Measuring cups",
+            "Kitchen",
+            "Utensils",
+            "Oven"
         ],
-        "American History": [
-            "Revolution",
-            "Civil War",
-            "Industrial",
-            "Depression",
-            "Civil Rights"
+        "Bugs": [
+            "Ladybug",
+            "Butterfly",
+            "Ant",
+            "Beetle",
+            "Bee",
+            "Caterpillar",
+            "Praying mantis",
+            "Grasshopper",
+            "Dragonfly",
+            "Mosquito"
         ],
-        "World History": [
-            "Ancient",
-            "Medieval",
-            "Renaissance",
-            "Colonialism",
-            "Imperialism"
+        "Underwater Creatures": [
+            "Fish",
+            "Shark",
+            "Dolphin",
+            "Whale",
+            "Octopus",
+            "Jellyfish",
+            "Seahorse",
+            "Sea turtle",
+            "Starfish",
+            "Crab"
         ],
-        "Asian History": [
-            "Dynasties",
-            "Confucianism",
-            "Buddhism",
-            "Imperialism",
-            "Nationalism"
+        "Fairies": [
+            "Fairy",
+            "Pixie",
+            "Sprite",
+            "Tinkerbell",
+            "Fairy dust",
+            "Wings",
+            "Magic",
+            "Forest",
+            "Enchanted",
+            "Toadstool"
         ],
-        "Latin American History": [
-            "Conquest",
-            "Colonialism",
-            "Independence",
-            "Revolution",
-            "Dictatorship"
+        "Magic": [
+            "Wizard",
+            "Spell",
+            "Wand",
+            "Hat",
+            "Rabbit",
+            "Illusion",
+            "Trick",
+            "Potion",
+            "Magician",
+            "Conjuring"
         ],
-        "African History": [
-            "Civilizations",
-            "Colonialism",
-            "Independence",
-            "Apartheid",
-            "Dictatorship"
+        "Holidays": [
+            "Christmas",
+            "Halloween",
+            "Easter",
+            "Thanksgiving",
+            "Valentine's Day",
+            "St. Patrick's Day",
+            "Independence Day",
+            "New Year",
+            "Hanukkah",
+            "Diwali"
         ],
-        "Middle Eastern History": [
-            "Civilizations",
-            "Islam",
-            "Crusades",
-            "Colonialism",
-            "Conflict"
+        "Outer Space": [
+            "Astronaut",
+            "Rocket",
+            "Planet",
+            "Galaxy",
+            "Comet",
+            "Asteroid",
+            "Black hole",
+            "Star",
+            "Alien",
+            "Spaceship"
         ],
-        "Religious Studies": [
-            "Christianity",
-            "Islam",
-            "Judaism",
-            "Buddhism",
-            "Hinduism"
+        "Dinosaurs": [
+            "Tyrannosaurus",
+            "Triceratops",
+            "Stegosaurus",
+            "Velociraptor",
+            "Brachiosaurus",
+            "Ankylosaurus",
+            "Pterodactyl",
+            "Spinosaurus",
+            "Allosaurus",
+            "Diplodocus"
         ],
-        "Comparative Religion": [
-            "Beliefs",
-            "Rituals",
-            "Scriptures",
-            "Spirituality",
-            "Ethics"
+        "Bugs": [
+            "Ladybug",
+            "Butterfly",
+            "Ant",
+            "Beetle",
+            "Bee",
+            "Caterpillar",
+            "Praying mantis",
+            "Grasshopper",
+            "Dragonfly",
+            "Mosquito"
         ],
-        "Philosophy": [
-            "Ethics",
-            "Logic",
-            "Metaphysics",
-            "Epistemology",
-            "Aesthetics"
+        "Underwater Creatures": [
+            "Fish",
+            "Shark",
+            "Dolphin",
+            "Whale",
+            "Octopus",
+            "Jellyfish",
+            "Seahorse",
+            "Sea turtle",
+            "Starfish",
+            "Crab"
         ],
-        "Artificial Intelligence": [
-            "Machine",
-            "Learning",
-            "Neural",
-            "Networks",
-            "Robotics"
-        ],
-        "Machine Learning": [
-            "Data",
-            "Models",
-            "Algorithms",
-            "Training",
-            "Classification"
-        ],
-        "Neural Networks": [
-            "Nodes",
-            "Layers",
-            "Weights",
-            "Activation",
-            "Functions"
-        ],
-        "Cybersecurity": [
-            "Encryption",
-            "Authentication",
-            "Firewalls",
-            "Malware",
-            "Privacy"
-        ],
-        "Information Technology": [
-            "Networking",
-            "Operating",
-            "Systems",
-            "Databases",
-            "Software"
-        ],
-        "Web Development": [
-            "HTML",
-            "CSS",
-            "JavaScript",
-            "Responsive",
-            "Design"
-        ],
-        "Mobile Development": [
-            "iOS",
+        "Robots": [
+            "Robot",
             "Android",
-            "Apps",
-            "Development",
-            "UX/UI"
-        ],
-        "Game Development": [
-            "Unity",
-            "GameMaker",
-            "Unreal",
-            "Engines",
-            "Scripting"
-        ],
-        "Data Science": [
-            "Analytics",
-            "Visualization",
-            "Big Data",
+            "Cyborg",
+            "AI",
+            "Mechanical",
+            "Automation",
+            "Artificial",
             "Machine",
-            "Learning"
-        ],
-        "Digital Marketing": [
-            "SEO",
-            "SEM",
-            "Email",
-            "Social",
-            "Media"
-        ],
-        "Finance": [
-            "Investments",
-            "Budgeting",
-            "Banking",
-            "Financial",
-            "Markets"
-        ],
-        "Business": [
-            "Entrepreneurship",
-            "Management",
-            "Leadership",
-            "Strategy",
+            "Technology",
             "Innovation"
         ],
-        "Management": [
-            "Planning",
-            "Organizing",
-            "Leading",
-            "Controlling",
-            "Evaluating"
+        "Mythical Creatures": [
+            "Dragon",
+            "Phoenix",
+            "Griffin",
+            "Mermaid",
+            "Centaur",
+            "Unicorn",
+            "Sphinx",
+            "Cyclops",
+            "Minotaur",
+            "Hydra"
         ],
-        "Leadership": [
-            "Vision",
-            "Inspiration",
-            "Motivation",
-            "Communication",
-            "Integrity"
+        "Adventure": [
+            "Exploration",
+            "Discovery",
+            "Journey",
+            "Quest",
+            "Expedition",
+            "Travel",
+            "Adventure park",
+            "Explore",
+            "Adventure time",
+            "Adventurer"
         ],
-        "Strategy": [
-            "Planning",
-            "Execution",
-            "Competitive",
-            "Advantage",
-            "Analysis"
+        "Balloons": [
+            "Helium",
+            "Party",
+            "Birthday",
+            "Inflatable",
+            "Decoration",
+            "Bouquet",
+            "Colors",
+            "Air",
+            "Festival",
+            "Blimp"
         ],
-        "Innovation": [
-            "Creativity",
-            "Adaptability",
-            "Risk-Taking",
-            "Problem-Solving",
-            "Ideation"
+        "Toys": [
+            "Doll",
+            "Action figure",
+            "Stuffed animal",
+            "Toy car",
+            "Toy train",
+            "Play-Doh",
+            "Building blocks",
+            "Puzzle",
+            "Board game",
+            "Remote control car"
         ],
-        "Marketing": [
-            "Product",
-            "Price",
-            "Place",
-            "Promotion",
-            "Segmentation"
+        "Treasure": [
+            "Gold",
+            "Silver",
+            "Jewels",
+            "Pirate",
+            "Map",
+            "X marks the spot",
+            "Treasure chest",
+            "Adventure",
+            "Lost treasure",
+            "Buried treasure"
         ],
-        "Human Resources": [
-            "Recruitment",
-            "Training",
-            "Development",
-            "Compensation",
-            "Benefits"
+        "Candy": [
+            "Chocolate",
+            "Gummy bears",
+            "Lollipops",
+            "Cotton candy",
+            "Caramel",
+            "Licorice",
+            "Jelly beans",
+            "Sour candy",
+            "Hard candy",
+            "Bubblegum"
+        ],
+        "Carnival": [
+            "Carousel",
+            "Ferris wheel",
+            "Bumper cars",
+            "Cotton candy",
+            "Clown",
+            "Roller coaster",
+            "Games",
+            "Prizes",
+            "Popcorn",
+            "Festival"
+        ],
+        "Pirates": [
+            "Ship",
+            "Treasure",
+            "Map",
+            "Captain",
+            "Sword",
+            "Pirate flag",
+            "Parrot",
+            "Island",
+            "Cannon",
+            "Plunder"
+        ],
+        "Trains": [
+            "Engine",
+            "Caboose",
+            "Conductor",
+            "Tracks",
+            "Freight train",
+            "Passenger train",
+            "Steam train",
+            "Diesel train",
+            "High-speed train",
+            "Ticket"
+        ],
+        "Cooking": [
+            "Recipes",
+            "Ingredients",
+            "Chef",
+            "Cookbook",
+            "Bake",
+            "Cooking class",
+            "Measuring cups",
+            "Kitchen",
+            "Utensils",
+            "Oven"
+        ],
+        "Bugs": [
+            "Ladybug",
+            "Butterfly",
+            "Ant",
+            "Beetle",
+            "Bee",
+            "Caterpillar",
+            "Praying mantis",
+            "Grasshopper",
+            "Dragonfly",
+            "Mosquito"
+        ],
+        "Underwater Creatures": [
+            "Fish",
+            "Shark",
+            "Dolphin",
+            "Whale",
+            "Octopus",
+            "Jellyfish",
+            "Seahorse",
+            "Sea turtle",
+            "Starfish",
+            "Crab"
+        ],
+        "Fairies": [
+            "Fairy",
+            "Pixie",
+            "Sprite",
+            "Tinkerbell",
+            "Fairy dust",
+            "Wings",
+            "Magic",
+            "Forest",
+            "Enchanted",
+            "Toadstool"
+        ],
+        "Magic": [
+            "Wizard",
+            "Spell",
+            "Wand",
+            "Hat",
+            "Rabbit",
+            "Illusion",
+            "Trick",
+            "Potion",
+            "Magician",
+            "Conjuring"
+        ],
+        "Holidays": [
+            "Christmas",
+            "Halloween",
+            "Easter",
+            "Thanksgiving",
+            "Valentine's Day",
+            "St. Patrick's Day",
+            "Independence Day",
+            "New Year",
+            "Hanukkah",
+            "Diwali"
+        ],
+        "Outer Space": [
+            "Astronaut",
+            "Rocket",
+            "Planet",
+            "Galaxy",
+            "Comet",
+            "Asteroid",
+            "Black hole",
+            "Star",
+            "Alien",
+            "Spaceship"
+        ],
+        "Dinosaurs": [
+            "Tyrannosaurus",
+            "Triceratops",
+            "Stegosaurus",
+            "Velociraptor",
+            "Brachiosaurus",
+            "Ankylosaurus",
+            "Pterodactyl",
+            "Spinosaurus",
+            "Allosaurus",
+            "Diplodocus"
+        ],
+        "Bugs": [
+            "Ladybug",
+            "Butterfly",
+            "Ant",
+            "Beetle",
+            "Bee",
+            "Caterpillar",
+            "Praying mantis",
+            "Grasshopper",
+            "Dragonfly",
+            "Mosquito"
+        ],
+        "Underwater Creatures": [
+            "Fish",
+            "Shark",
+            "Dolphin",
+            "Whale",
+            "Octopus",
+            "Jellyfish",
+            "Seahorse",
+            "Sea turtle",
+            "Starfish",
+            "Crab"
+        ],
+        "Robots": [
+            "Robot",
+            "Android",
+            "Cyborg",
+            "AI",
+            "Mechanical",
+            "Automation",
+            "Artificial",
+            "Machine",
+            "Technology",
+            "Innovation"
+        ],
+        "Mythical Creatures": [
+            "Dragon",
+            "Phoenix",
+            "Griffin",
+            "Mermaid",
+            "Centaur",
+            "Unicorn",
+            "Sphinx",
+            "Cyclops",
+            "Minotaur",
+            "Hydra"
+        ],
+        "Adventure": [
+            "Exploration",
+            "Discovery",
+            "Journey",
+            "Quest",
+            "Expedition",
+            "Travel",
+            "Adventure park",
+            "Explore",
+            "Adventure time",
+            "Adventurer"
+        ],
+        "Balloons": [
+            "Helium",
+            "Party",
+            "Birthday",
+            "Inflatable",
+            "Decoration",
+            "Bouquet",
+            "Colors",
+            "Air",
+            "Festival",
+            "Blimp"
+        ],
+        "Toys": [
+            "Doll",
+            "Action figure",
+            "Stuffed animal",
+            "Toy car",
+            "Toy train",
+            "Play-Doh",
+            "Building blocks",
+            "Puzzle",
+            "Board game",
+            "Remote control car"
+        ],
+        "Treasure": [
+            "Gold",
+            "Silver",
+            "Jewels",
+            "Pirate",
+            "Map",
+            "X marks the spot",
+            "Treasure chest",
+            "Adventure",
+            "Lost treasure",
+            "Buried treasure"
+        ],
+        "Candy": [
+            "Chocolate",
+            "Gummy bears",
+            "Lollipops",
+            "Cotton candy",
+            "Caramel",
+            "Licorice",
+            "Jelly beans",
+            "Sour candy",
+            "Hard candy",
+            "Bubblegum"
+        ],
+        "Carnival": [
+            "Carousel",
+            "Ferris wheel",
+            "Bumper cars",
+            "Cotton candy",
+            "Clown",
+            "Roller coaster",
+            "Games",
+            "Prizes",
+            "Popcorn",
+            "Festival"
+        ],
+        "Pirates": [
+            "Ship",
+            "Treasure",
+            "Map",
+            "Captain",
+            "Sword",
+            "Pirate flag",
+            "Parrot",
+            "Island",
+            "Cannon",
+            "Plunder"
+        ],
+        "Trains": [
+            "Engine",
+            "Caboose",
+            "Conductor",
+            "Tracks",
+            "Freight train",
+            "Passenger train",
+            "Steam train",
+            "Diesel train",
+            "High-speed train",
+            "Ticket"
+        ],
+        "Cooking": [
+            "Recipes",
+            "Ingredients",
+            "Chef",
+            "Cookbook",
+            "Bake",
+            "Cooking class",
+            "Measuring cups",
+            "Kitchen",
+            "Utensils",
+            "Oven"
         ]
     }
 }
