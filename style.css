@@ -6,7 +6,7 @@
 
   /* color-scheme: light dark; */
   color: #000;
-  background-color: rgba(255, 255, 255, 0.87);
+
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -15,12 +15,18 @@
 }
 
 html {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   max-width: 1048px;
-  margin: 10px auto 0 auto;  
+  margin: 10px auto 0 auto;
   background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
 }
 
 main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 100%;
 }
 
@@ -29,7 +35,12 @@ main .sample-sheet {
   flex-direction: column;
   justify-content: center;
   margin: 10px auto;
-  width: 50%;  
+  width: 50%;
+  height: fit-content;
+
+  @media screen and (max-width: 640px) {
+    width: 100%;
+  }
 }
 
 main .sample-sheet h2 {
@@ -39,12 +50,14 @@ main .sample-sheet h2 {
 
 main .sample-sheet img {
   height: auto;
-  width: 100%;
+  width: 85%;
+  margin: auto;
 }
 
 .fake-ad {
   position: relative;
-  width: 730px;
+  width: 100%;
+  max-width: 730px;
   height: 90px;
   background-color: #000;
   border-radius: 5px;
@@ -58,26 +71,50 @@ main .sample-sheet img {
   margin: 10px;
 }
 
+.wordsearch-wrapper {
+  display: grid;
+  grid-template-columns: 200px auto;
+  gap: 10px;
+  margin-left: 50px;
+  width: 90%;
+
+  @media screen and (max-width: 640px) {
+    transform: scale(.4) translateX(-300px);
+  }
+}
+
 .worksheet {
-  position: relative;  
+  position: relative;
   margin: 10px auto 0 auto;
   width: 90%;
-  height: 675px; 
+  height: 670px;
   display: flex;
   flex-direction: column;
-  justify-content: center;  
+  justify-content: center;
   background-size: cover;
   position: relative;
   overflow: hidden;
   border-radius: 5px;
   border: .5px solid #000;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+
+  @media screen and (max-width: 640px) {
+    width: 95vw;
+    height: 40vh;
+    margin: 10px auto;
+  }
 }
 
 .sheet-title {
   position: absolute;
   top: 10px;
   left: 5px;
+
+  @media screen and (max-width: 640px) {
+    transform: scale(.35) translateX(-300px);
+    left: 35px;
+    top: 2px;
+  }
 }
 
 main .background {
@@ -97,18 +134,6 @@ h1 {
   border-radius: 5px;
 }
 
-.wordsearch-wrapper {
-  display: grid;
-  grid-template-columns: 200px auto;
-  gap: 10px;
-  margin-left: 50px;
-  width: 90%;
-    
-  @media screen and (max-width: 640px) {
-    transform: scale(.85);
-  }
-}
-
 .grid {
   color: #000;
   padding: 2em;
@@ -117,7 +142,7 @@ h1 {
   border-radius: 10px;
 }
 
-.grid > div {
+.grid>div {
   display: flex;
   justify-content: center;
   gap: 20px;
@@ -135,9 +160,9 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 10px;  
+  padding: 10px;
   font-size: 1.2rem;
-  font-style: italic;  
+  font-style: italic;
   background-color: rgba(255, 255, 255, 85%);
   border-radius: 10px;
 }
@@ -147,11 +172,12 @@ h1 {
   font-weight: bold;
 }
 
-.words > div {
+.words>div {
   margin: 2px 5px;
 }
 
-.grid, .words {
+.grid,
+.words {
   border: 7px double #000;
   border-radius: 10px;
 }
@@ -169,16 +195,23 @@ h1 {
   border: 1px #000 dashed;
   border-radius: 10px;
   position: relative;
-  
-  @media screen and (max-width: 640px) {    
-    flex-direction: column;
-    align-items: center;    
+
+  @media screen and (max-width: 640px) {
+    width: 90vw;
+    flex-wrap: wrap;
+    height: fit-content;
   }
 }
 
 .controls summary {
   position: absolute;
   top: 2px;
+  
+  @media screen and (max-width: 640px) {
+    position: static;
+    flex-basis: 100%;
+    text-align: center;
+  }
 }
 
 .controls button {
@@ -190,26 +223,28 @@ h1 {
   background-color: goldenrod;
   border: 1px solid #000;
   max-width: 80%;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-  
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+
   @media screen and (max-width: 640px) {
-    padding: 10px 25px;
-    font-size: 2rem;
+    flex-basis: 75%;
   }
 }
 
 .controls button:hover {
-   background-color: #cb9305;
+  background-color: #cb9305;
 }
 
 .setup-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 100%;
   min-width: 350px;
   max-width: 500px;
   margin: auto;
-  
+
   @media screen and (max-width: 640px) {
-    transform: scale(1.5);
+    max-width: 90vw;
   }
 }
 
@@ -221,10 +256,11 @@ h1 {
   padding: 10px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 10px;
 }
 
-.setup-section form > button {
+.setup-section form>button {
   width: 50%;
   margin: 10px auto;
   padding: 5px;
@@ -243,6 +279,7 @@ h1 {
 .setup-section form label {
   font-weight: bold;
   font-style: italic;
+  width: 100%;
 }
 
 .setup-section .search-area {
@@ -250,17 +287,21 @@ h1 {
   background-color: lightgray;
 }
 
-.setup-section .search-area > * {
+.setup-section .search-area input {
+  width: 70%;
+}
+
+.setup-section .search-area>* {
   display: flex;
   justify-content: center;
   gap: 5px;
   margin: 10px auto;
   padding: 1px;
-  text-align: center;    
+  text-align: center;
 }
 
 .setup-section .search-area fieldset {
-  width: 250px;  
+  width: 250px;
   border-radius: 15px;
 }
 
@@ -279,26 +320,30 @@ h1 {
 
 /*Don't print these*/
 @media print {
-  @page {size: landscape}
-    
-  body {    
+  @page {
+    size: landscape
+  }
+
+  body {
     min-height: 100%;
     overflow: hidden;
     margin: 0 !important;
     padding: 0 !important;
-    -webkit-print-color-adjust:exact !important;
-    print-color-adjust:exact !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
   }
-  
+
   main {
     height: 655px;
     width: 98%;
   }
-
-  #tool-bar, .fake-ad {
+  
+  
+  #tool-bar,
+  .fake-ad {
     display: none !important;
   }
-  
+
   #watermark {
     display: block;
     padding-top: 10px;

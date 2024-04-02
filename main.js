@@ -48,7 +48,7 @@ backgroundSearch.addEventListener("click", async (e) => {
 let listSelect = document.querySelector('#list-select');
 let lists = await getLists();
 
-listSelect.addEventListener("change", (evt) => (textArea.innerHTML = lists[evt.target.value].join(', ')));
+listSelect.addEventListener("change", (evt) => (textArea.innerText = lists[evt.target.value].join(', ')));
 
 let data = null;
 let puzzle = null;
