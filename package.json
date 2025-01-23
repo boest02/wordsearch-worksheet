@@ -4,10 +4,11 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "npm run copydata:dev && vite",
     "build": "vite build && npm run copydata",
     "preview": "vite preview",
-    "copydata": "cp -R src/data/ dist/data"
+    "copydata": "cp -R src/data/ dist/data",
+    "copydata:dev": "cp -vR src/data/ public/data"
   },
   "devDependencies": {
     "vite": "^5.1.4"
