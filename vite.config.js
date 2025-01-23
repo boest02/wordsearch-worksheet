@@ -10,8 +10,8 @@ export default defineConfig({
     global: {},
   },
   server: {
-    host: "0.0.0.0",
-    port: 3000,
-    strictPort: true,    
+    // host: "0.0.0.0",
+    port: 6002,
+    strictPort: true,
   },
 })
