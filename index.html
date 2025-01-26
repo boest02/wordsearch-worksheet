@@ -4,46 +4,51 @@
 <head>
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/src/images/wordsearch.png" />
+  <link rel="stylesheet" href="./style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Wordsearch Worksheet</title>
+  <meta property="og:site_name" content="Funsheets: Wordsearch Worksheets">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Wordsearch Worksheet">
+  <meta property="og:description" content="Allow users to create printable wordsearch worksheets.">
+  <meta property="og:image:secure_url" content="https://www.funsheets.xyz/assets/SampleSheet-CVF-WJV2.png">
+  <meta property="og:url" content="https://funsheets.xyz/">
+  <title>Fun Sheets - Wordsearch Worksheet</title>
 
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4294336322137782" crossorigin="anonymous"></script>
 
 </head>
 
 <body>
-  <main>
-    <div class="sample-sheet">
-      <h2>Sample Worksheet</h2>
-      <img src="./src/images/SampleSheet.png" alt="">
-    </div>
-  </main>
   <div id="tool-bar" class="controls">
     <summary>Refresh to start over</summary>
     <button id="printer">Print Me!</button>
     <button id="rebuild">Shuffle Letters</button>
     <button id="edit">Edit</button>
+    <button id="reset">Start Over</button>
   </div>
 
   <div id="watermark">
-    <p>From wordseeker.xyz</p>
+    <p>created on funsheets.xyz</p>
   </div>
 
   <section class="setup-section">
-    <h3>Lets setup a Wordsearch Worksheet...</h3>
+    <h3>Setup a Wordsearch Worksheet below...</h3>
     <form>
       <label for="name">Give the Worksheet a Title for the top (or leave it blank):</label>
       <input type="text" id="name" name="name" />
 
-      <label for="list-select">Select a topic to help start your word list:</label>
+      <label for="list-select">Select a topic from the topic generator below:</label>
+      <p>This will help generate a list of words for your worksheet, which you can edit later or build your own in the word list editor.</p>
       <select name="lists" id="list-select">
       </select>
 
       <label for="words">Add words to your list, separating with commas:</label>
+      <p>...or build your own in the word list editor.</p>
       <textarea id="words" required rows="10" cols="25"></textarea>
 
       <div class="background-select">
-        <label for="background">Search for a Background image for your Worksheet...</label>
+        <label for="background">Use the Search to find a Background image for your Worksheet...</label>
+        <p>This will be used as the background for your worksheet.</p>
         <div class="search-area">
           <div>
             <input type="text" id="background" placeholder="Add a background image?" />
@@ -66,9 +71,17 @@
       </div>
       <input hidden type="text" id="holder" name="holder" />
 
-      <button>Build the Worksheet!</button>
+      <button>Build It!</button>
     </form>
   </section>
+
+  <main>
+    <div class="sample-sheet">
+      <h2>Sample Worksheet</h2>
+      <p>This is a sample worksheet built using a choice from the topic generator and an image selected from an illustration search.</p>
+      <img src="./src/images/SampleSheet.png" width="440px" height="315px" alt="">
+    </div>
+  </main>
 
   <script type="module" src="/main.js"></script>
 

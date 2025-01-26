@@ -1,4 +1,3 @@
-import "./style.css";
 import WorkSheet from "./src/WorkSheet.js"; // word search
 import WordSearch from "./src/WordSearch.js"; // word list
 import validateForm from "./src/formValid.js";
@@ -10,7 +9,7 @@ const textArea = form.querySelector("#words");
 const printerBtn = document.querySelector("#printer");
 const editBtn = document.querySelector('#edit');
 const rebuildBtn = document.querySelector('#rebuild');
-
+const resetBtn = document.querySelector('#reset');
 const backgroundSearch = document.querySelector("#get-background");
 const backgroundInput = document.querySelector("#background");
 const backgroundImage = document.querySelector('#background-image');
@@ -89,7 +88,7 @@ backgroundImage.addEventListener("load", (e) => backgroundImage.style.display = 
 printerBtn.addEventListener("click", () => window.print());
 editBtn.addEventListener("click", () => toggleScreens(true));
 rebuildBtn.addEventListener("click", () => createWorksheet(data));
-
+resetBtn.addEventListener("click", () => window.location.reload());
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();

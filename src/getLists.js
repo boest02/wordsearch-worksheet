@@ -7,7 +7,7 @@ async function getLists() {
     console.log(data);
     let lists = data.lists;
 
-    document.querySelector('#list-select').innerHTML = `<option value="">--Please choose an option--</option>${Object.keys(lists).map((key) => `<option value="${key}">${key}</option>`)
+    document.querySelector('#list-select').innerHTML = `<option value="">- Select from Topic Generator -</option>${Object.keys(lists).map((key) => `<option value="${key}">${key}</option>`)
         }`;
 
     return lists;

@@ -17,10 +17,21 @@
 html {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  max-width: 1048px;
-  margin: 10px auto 0 auto;
+  width: 100%;
+  height: fit-content;
+  min-height: 100%;
+  margin: auto;
   background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat-x;
+}
+
+body {
+  width: 100%;
+  max-width: 1024px;
+  height: 100%;
+  margin: 0 auto;
 }
 
 main {
@@ -34,9 +45,12 @@ main .sample-sheet {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 10px auto;
-  width: 50%;
+  margin: 10px auto 50px;
+  width: 60%;
   height: fit-content;
+  border: 1px solid #fff;
+  padding: 15px;
+  border-radius: 10px;
 
   @media screen and (max-width: 640px) {
     width: 100%;
@@ -44,9 +58,20 @@ main .sample-sheet {
 }
 
 main .sample-sheet h2 {
+  color: #fff;
   font-style: italic;
   margin: 0;
 }
+
+main p {
+  color: #fff;
+  margin-top: 10px;
+  margin-inline: 10px;
+  font-size: 1rem;
+  line-height: 1.2;
+  font-style: italic;
+}
+
 
 main .sample-sheet img {
   height: auto;
@@ -54,21 +79,15 @@ main .sample-sheet img {
   margin: auto;
 }
 
-.fake-ad {
+main::before {
+  content: "Sheet Preview...";
   position: relative;
-  width: 100%;
-  max-width: 730px;
-  height: 90px;
-  background-color: #000;
-  border-radius: 5px;
-  margin: 10px auto 0 auto;
-}
-
-.fake-ad::before {
-  content: "Advertisement Placeholder";
+  top: 0;
+  left: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
   color: #fff;
   font-style: italic;
-  margin: 10px;
 }
 
 .wordsearch-wrapper {
@@ -206,7 +225,7 @@ h1 {
 .controls summary {
   position: absolute;
   top: 2px;
-  
+
   @media screen and (max-width: 640px) {
     position: static;
     flex-basis: 100%;
@@ -240,8 +259,8 @@ h1 {
   justify-content: center;
   width: 100%;
   min-width: 350px;
-  max-width: 500px;
-  margin: auto;
+  max-width: 650px;
+  margin: 50px auto 10px;
 
   @media screen and (max-width: 640px) {
     max-width: 90vw;
@@ -250,6 +269,23 @@ h1 {
 
 .setup-section h3 {
   font-size: 1.5rem;
+  margin-block: 10px;
+  line-height: 1.2;
+  border-bottom: 1px solid #fff;
+}
+
+.setup-section label {
+  line-height: 1;
+  font-size: 1.1rem;
+  margin-top: 10px;
+}
+
+.setup-section p {
+  color: #fff;
+  margin: 0px 10px 5px;
+  font-size: 1rem;
+  line-height: 1.2;
+  font-style: italic;
 }
 
 .setup-section form {
@@ -263,12 +299,21 @@ h1 {
 .setup-section form>button {
   width: 50%;
   margin: 10px auto;
-  padding: 5px;
-  background-color: green;
+  padding: 15px;
+  background-image: linear-gradient(to right, #1a8c4b, #186e3c);
   color: #fff;
-  border-radius: 5px;
-  font-size: 1em;
+  border-radius: 15px;
+  font-size: 1.2em;
   font-weight: bold;
+  box-shadow: 0 3px 6px rgba(255,255,255,0.2), 0 3px 6px rgba(0,0,0,0.23);
+  transition: all 0.3s ease;
+  cursor: pointer;
+
+  &:hover {
+    background-image: linear-gradient(to right, #2ecc71, #27ae60);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+  }
 }
 
 .setup-section form input {
@@ -283,8 +328,10 @@ h1 {
 }
 
 .setup-section .search-area {
-  border: 1px solid #000;
-  background-color: lightgray;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  margin-top: 10px;
+  color: #fff;
 }
 
 .setup-section .search-area input {
@@ -301,8 +348,19 @@ h1 {
 }
 
 .setup-section .search-area fieldset {
-  width: 250px;
+  margin-block: 20px;
+  width: 60%;
   border-radius: 15px;
+
+  legend {
+    color: #000;
+    font-weight: bold;
+    font-style: italic;
+  }
+
+  div {
+    width: 40%;
+  }
 }
 
 .setup-section .background-select img {
@@ -321,11 +379,16 @@ h1 {
 /*Don't print these*/
 @media print {
   @page {
-    size: landscape
+    size: landscape;
+  }
+
+  html {
+    height: 95%;
+    justify-content: center;
   }
 
   body {
-    min-height: 100%;
+    height: 90%;
     overflow: hidden;
     margin: 0 !important;
     padding: 0 !important;
@@ -334,18 +397,24 @@ h1 {
   }
 
   main {
-    height: 655px;
+    height: auto;
     width: 98%;
+
+    &::before {
+      display: none;
+    }
   }
-  
-  
-  #tool-bar,
-  .fake-ad {
+
+  #tool-bar {
     display: none !important;
   }
 
   #watermark {
     display: block;
-    padding-top: 10px;
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    padding: 0;
+    margin: 0;
   }
 }
