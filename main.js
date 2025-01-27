@@ -69,7 +69,7 @@ const createWorksheet = (data) => {
   console.log("Puzzle: ", puzzle);
 
   let worksheet = new WorkSheet(data.name, puzzle, data.background);
-  mainEl.innerHTML = worksheet.toHTML();
+  mainEl.innerHTML = `<div class="preview-title">Sheet Preview...</div>${worksheet.toHTML()}`;
   worksheet = null; //destroy
 };
 

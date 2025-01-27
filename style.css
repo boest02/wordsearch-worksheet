@@ -38,18 +38,26 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 100%;
+  margin: 20px auto;
+}
+
+main .preview-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  font-style: italic;
 }
 
 main .sample-sheet {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: relative;
   margin: 10px auto 50px;
-  width: 60%;
+  width: 90%;
   height: fit-content;
   border: 1px solid #fff;
-  padding: 15px;
+  padding: 10px 20px;
   border-radius: 10px;
 
   @media screen and (max-width: 640px) {
@@ -77,17 +85,6 @@ main .sample-sheet img {
   height: auto;
   width: 85%;
   margin: auto;
-}
-
-main::before {
-  content: "Sheet Preview...";
-  position: relative;
-  top: 0;
-  left: 10px;
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #fff;
-  font-style: italic;
 }
 
 .wordsearch-wrapper {
