@@ -6,7 +6,7 @@
   <link rel="icon" type="image/svg+xml" href="/src/images/wordsearch.png" />
   <link rel="stylesheet" href="./style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Allow teachers to create printable wordsearch worksheets with backgrounds and their own word lists and titles.">
+  <meta name="description" content="Allow teachers to create FREE printable wordsearch worksheets with backgrounds and their own word lists and titles.">
   <meta property="og:site_name" content="Funsheets: Wordsearch Worksheets">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Wordsearch Worksheet">
@@ -20,19 +20,24 @@
 </head>
 
 <body>
-  <div id="tool-bar" class="controls">
+  <nav id="tool-bar" class="controls">
     <summary>Refresh to start over</summary>
     <button id="printer">Print Me!</button>
     <button id="rebuild">Shuffle Letters</button>
     <button id="edit">Edit</button>
     <button id="reset">Start Over</button>
-  </div>
+  </nav>
 
   <div id="watermark">
     <p>created on funsheets.xyz</p>
   </div>
 
-  <section class="setup-section">
+  <article class="page-content">
+    <h1 class="page-title">Fun Sheets - Wordsearch Worksheet</h1>
+    <p class="page-description">Use the form below to create a wordsearch worksheet. Select a topic from the topic generator below, or add your own words to the list. Then if you want, you can add a background image to your worksheet by searching for an image or illustration.</p>
+  </article>
+
+  <article class="setup-section">
     <h3>Setup a Wordsearch Worksheet below...</h3>
     <form>
       <label for="name">Give the Worksheet a Title for the top (or leave it blank):</label>
@@ -74,7 +79,7 @@
 
       <button>Build It!</button>
     </form>
-  </section>
+  </article>
 
   <main>
     <div class="preview-title">Sheet Preview...</div>

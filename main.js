@@ -14,6 +14,7 @@ const backgroundSearch = document.querySelector("#get-background");
 const backgroundInput = document.querySelector("#background");
 const backgroundImage = document.querySelector('#background-image');
 const setupSection = document.querySelector('.setup-section');
+const pageContent = document.querySelector('.page-content');
 const toolBar = document.querySelector('#tool-bar');
 
 let backgroundImageUrl = null;
@@ -77,9 +78,11 @@ const toggleScreens = (edit) => {
   if (edit) {
     setupSection.style.display = "inherit";
     toolBar.style.display = "none";
+    pageContent.style.display = "inherit";
   } else {
     setupSection.style.display = "none";
     toolBar.style.display = "flex";
+    pageContent.style.display = "none";
   }
 
 };
