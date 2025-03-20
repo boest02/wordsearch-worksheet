@@ -1,9 +1,57 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36" version="26.0.11">
   <diagram name="Page-1" id="mdCwB75Nw3vO6wOgShD5">
-    <mxGraphModel>
+    <mxGraphModel dx="865" dy="467" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="YeWXlQarPgj5sbzn7CdS-1" value="" style="whiteSpace=wrap;html=1;aspect=fixed;align=right;labelPosition=left;verticalLabelPosition=middle;verticalAlign=middle;textDirection=ltr;" vertex="1" parent="1">
+          <mxGeometry x="15" y="60" width="400" height="400" as="geometry" />
+        </mxCell>
+        <mxCell id="YeWXlQarPgj5sbzn7CdS-5" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="140" width="110" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="YeWXlQarPgj5sbzn7CdS-10" value="sample&lt;br&gt;image" style="ellipse;shape=cloud;html=1;whiteSpace=wrap;align=center;" vertex="1" parent="1">
+          <mxGeometry x="40" y="140" width="100" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="YeWXlQarPgj5sbzn7CdS-2" value="Nav Bar" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="15" y="60" width="400" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YeWXlQarPgj5sbzn7CdS-4" value="&lt;b&gt;List of Sheets&lt;/b&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=4" vertex="1" parent="1">
+          <mxGeometry x="30" y="100" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YeWXlQarPgj5sbzn7CdS-11" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="140" width="110" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="YeWXlQarPgj5sbzn7CdS-12" value="sample&lt;br&gt;image" style="ellipse;shape=cloud;html=1;whiteSpace=wrap;align=center;" vertex="1" parent="1">
+          <mxGeometry x="160" y="140" width="100" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="YeWXlQarPgj5sbzn7CdS-15" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="140" width="110" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="YeWXlQarPgj5sbzn7CdS-16" value="sample&lt;br&gt;image" style="ellipse;shape=cloud;html=1;whiteSpace=wrap;align=center;" vertex="1" parent="1">
+          <mxGeometry x="280" y="140" width="100" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="YeWXlQarPgj5sbzn7CdS-19" value="" style="whiteSpace=wrap;html=1;aspect=fixed;align=right;labelPosition=left;verticalLabelPosition=middle;verticalAlign=middle;textDirection=ltr;" vertex="1" parent="1">
+          <mxGeometry x="438" y="60" width="400" height="400" as="geometry" />
+        </mxCell>
+        <mxCell id="YeWXlQarPgj5sbzn7CdS-20" value="Nav Bar" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="438" y="60" width="400" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YeWXlQarPgj5sbzn7CdS-21" value="&lt;h2 style=&quot;margin: 0px;&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;Wordsearch&lt;/font&gt;&lt;/h2&gt;&lt;p style=&quot;margin: 0px;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;Lorem ipsum dolor sit amet, consectetur...&lt;/font&gt;&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="43" y="198" width="115" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YeWXlQarPgj5sbzn7CdS-22" value="&lt;h2 style=&quot;margin: 0px;&quot;&gt;&lt;span style=&quot;font-size: 15px;&quot;&gt;Bingo Cards&lt;/span&gt;&lt;/h2&gt;&lt;p style=&quot;margin: 0px;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;Lorem ipsum dolor sit amet, consectetur...&lt;/font&gt;&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="165" y="198" width="115" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YeWXlQarPgj5sbzn7CdS-23" value="&lt;h2 style=&quot;margin: 0px;&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;Crossword&lt;/font&gt;&lt;/h2&gt;&lt;p style=&quot;margin: 0px;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;Lorem ipsum dolor sit amet, consectetur...&lt;/font&gt;&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="285" y="198" width="115" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YeWXlQarPgj5sbzn7CdS-24" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="450" y="260" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="YeWXlQarPgj5sbzn7CdS-25" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="450" y="100" width="380" height="150" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
